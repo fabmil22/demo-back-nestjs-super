@@ -1,4 +1,4 @@
-import { IsArray, IsNotEmpty, IsString } from 'class-validator';
+import { IsArray, IsNotEmpty, IsOptional, IsString } from 'class-validator';
 
 export class CreateSuperHeroDto {
   @IsString()
@@ -12,5 +12,9 @@ export class CreateSuperHeroDto {
   @IsArray()
   @IsNotEmpty()
   superpowers: Array<string>;
+
+  @IsString()
+  @IsOptional()
+  image: string;
 
 }

@@ -15,6 +15,8 @@ export class SuperHero {
   secretIdentity: string;
   @Column('json', { nullable: true })
   superpowers: string[];
+  @Column()
+  image: string;
   @DeleteDateColumn()
   deletedAt: Date;
 }
