@@ -3,6 +3,9 @@ import { SuperHerosModule } from './super-heros/super-heros.module';
 import { ConfigModule } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { PowersModule } from './powers/powers.module';
+import { UserModule } from './user/user.module';
+import { AuthModule } from './auth/auth.module';
+
 
 @Module({
   imports: [
@@ -19,6 +22,8 @@ import { PowersModule } from './powers/powers.module';
     }),
     SuperHerosModule,
     PowersModule,
+    UserModule,
+    AuthModule,
   ],
   controllers: [],
   providers: [],

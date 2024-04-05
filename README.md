@@ -33,7 +33,7 @@ $ npm install
 ```
 
 ## Running the app
-
+#debe de tener instaldo docker hub
 ```bash
 # development
 $ npm run start
